@@ -1,0 +1,30 @@
+{
+  "name": "ddry-tape",
+  "description": "Optional dependency wrapper mounting TAP as ddry test harness",
+  "scripts": {
+    "test": "make coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ddry/ddry-tape"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "bin/"
+  ],
+  "bin": "bin/ddry-tape",
+  "keywords": [
+    "ddry",
+    "tape"
+  ],
+  "author": "Vassiliy Pimkin <vassiliy.pimkin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ddry": "0.1.19",
+    "tap": "^10.3.2"
+  },
+  "devDependencies": {
+    "ddry-mocha-tape": "0.1.19"
+  }
+}
