@@ -26,5 +26,6 @@
   },
   "devDependencies": {
     "ddry-mocha-tape": "0.1.19"
-  }
+  },
+  "version": "10.3.2-d0.1.19"
 }
