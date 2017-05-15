@@ -6,7 +6,7 @@
 
 Optional dependency wrapper mounting TAP as **ddry** test harness.
 
-Includes [ddry](https://www.npmjs.com/package/ddry) v0.1.19 and [TAP](https://www.npmjs.com/package/tap) v4.6.3.
+Includes [ddry](https://www.npmjs.com/package/ddry) v0.1.19 and [TAP](https://www.npmjs.com/package/tap) v10.3.2.
 
 Version reflects TAP version, so your `package.json` remains clean yet informative.
 
