@@ -29,7 +29,7 @@ module.exports = (dd) ->
 
 And that's it. `i` is for input, `e` is for expected. Let's keep focused on data flow. Pray excuse me who think that `require`, `assert`, `expect` etc. are the essence of testing.
 
-This data-driven code will be compiled by [ddry](https://www.npmjs.com/package/ddry) to code actually executable by any of three JS test harnesses: [Mocha JS](https://www.npmjs.com/package/mocha), [TAP](https://www.npmjs.com/package/tap) or [Tape JS](https://www.npmjs.com/package/tape). [ddry](https://www.npmjs.com/package/ddry) itself is fully covered on all of them with unified harness-agnostic codebase.
+This data-driven code will be adapted and passed by [ddry](https://www.npmjs.com/package/ddry) to any of three JS test harnesses: [Mocha JS](https://www.npmjs.com/package/mocha), [TAP](https://www.npmjs.com/package/tap) or [Tape JS](https://www.npmjs.com/package/tape). [ddry](https://www.npmjs.com/package/ddry) itself is fully covered on all of them with unified harness-agnostic codebase.
 
 Also [ddry](https://www.npmjs.com/package/ddry) has:
 - cross-harness features: context, before/after hooks and x-style skipping and mass-skipping;
@@ -59,7 +59,7 @@ In your development environment you may want to get easy access to `ddry` shell 
 $ sudo npm i -g ddry
 ```
 
-`ddry` shell command is just a spec configuring tool, it does not perform any actual testing which is task of harness-specific commands as well as spec suite execution scoping. This package is one of four test harness specific **ddry** optional dependencies packages solving 2 main tasks:
+`ddry` shell command is just a spec configuring tool, it does not perform any actual testing which is task of harness-specific commands as well as spec suite execution scoping. This package is one of four test harness specific **ddry** optional dependencies packages solving two main tasks:
 - adding viable `devDependencies` set — **ddry** core and test harness(es) — to `package.json`;
 - implementing harness-specific shell command, i.e. `ddry-tap`.
 
