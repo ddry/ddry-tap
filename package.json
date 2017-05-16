@@ -1,6 +1,6 @@
 {
   "name": "ddry-tap",
-  "version": "10.3.2-d0.1.19",
+  "version": "10.3.2-d0.1.20",
   "description": "Optional dependency wrapper mounting TAP as ddry test harness",
   "scripts": {
     "test": "make coveralls"
