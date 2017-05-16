@@ -40,9 +40,9 @@ Also [ddry](https://www.npmjs.com/package/ddry) has:
 - Selenium Webdriver support (with Mocha only);
 - `ddry` shell command to maintain the project spec config file `ddry.json`;
 - test harness specific commands `ddry-tap` etc. to comfortly run the specs of your choice against test harness of your choice;
-- etc.
+- some cute minor features.
 
-Plainly, a decent set of features to make JS testing easy and even fun.
+Plainly, a decent set of capabilities to make JS testing easy and even fun.
 
 ### ddry command line interface
 
@@ -66,7 +66,7 @@ $ sudo npm i -g ddry
 Other three are
 - [ddry-mocha](https://www.npmjs.com/package/ddry-mocha) for Mocha JS;
 - [ddry-tape](https://www.npmjs.com/package/ddry-tape) for Tape JS;
-- [ddry-mocha-tape](https://www.npmjs.com/package/ddry-mocha-tape) mounting all supported harnesses.
+- [ddry-mocha-tape](https://www.npmjs.com/package/ddry-mocha-tape) mounting all the supported harnesses.
 
 You may consider globally installing them all with one package instead of playing with only-one-harness ones.
 
@@ -86,21 +86,21 @@ Then you can populate your spec folder with data-driven specs and adjust `ddry.j
 
 With `config` or `c` command you can plug your own JS module receiving arguments and returning the config object you need. That is how config editing automation is solved here.
 
-With `titles` or `t` command you can parse your code folder for module titles taken from the first block comment. Also this command builds the system file `cli.json` used for spec suite execution scoping. If scoping fails `ddry t` will fix it likely.
+With `titles` or `t` command you can parse your code folder for module titles taken from the first block comment. Also this command builds the system file `cli.json` used for spec suite execution scoping. If scoping fails, `ddry t` will fix it likely.
 
 With `addScope` or `as` and `removeScope` or `rs` commands you can set and unset permanent **only-except** scopes that will affect running spec from within test harness.
 
 With `add` or `a` and `remove` or `r` commands you can add and remove values of config object. These two commands are rather for compatibility, scoping commands described above or manual editing of `ddry.json` look much more appropriate.
 
-`usage` or `?` or `h` command delivers usage info — summary or for given command. We don't need to reproduce it here.
+`usage` or `?` or `h` command outputs usage info — summary or for given command. We don't need to reproduce it here.
 
 ### Spec suite execution scoping
 
 `ddry-tap` without parameters will launch the entire suite configured in `ddry.json` against [TAP](https://www.npmjs.com/package/tap).
 
-Use `-e` and `-o` keys for **except** and **only** scoping strategies applied to `tab`-completed code or spec files or folders. Inside code folder have access to module folders and module level, inside spec folder you may scope method-wise. Keys you use with `ddry-tap` command will have effect only once, while this shell command runs.
+Use `-e` and `-o` keys for **except** and **only** scoping strategies applied to `tab`-completed code or spec files or folders. Inside code folder you have access to module folders and module level, inside spec folder you may scope method-wise. Keys you use with `ddry-tap` command will have effect only once, while this shell command runs.
 
-As mentioned above, to manage permanent scopes in `ddry.json` you may use `ddry as` and `ddry rs` commands — they will translate to config object style (dot-notated, by the way) your `tab`-completed findings.
+As mentioned above, to manage permanent scopes in `ddry.json` you may use `$ ddry as` and `$ ddry rs` commands — they will translate to config object style (dot-notated, by the way) your `tab`-completed findings.
 
 ### Programmatical usage
 **(obsolete)**
@@ -120,4 +120,4 @@ or even ultimately superlatively obsolete basic plain usage:
 DataDriven = require 'ddry'
 ```
 
-But I think you really want CLI for actual work.
+But I think you really want CLI for actual work. Editing the spec config in and out for use-once scopes is as boring to death probably as `grep`-ping around your tests.
